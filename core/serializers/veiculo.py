@@ -3,8 +3,9 @@ from rest_framework.serializers import ModelSerializer
 from core.models import Veiculo
 
 
-class Veiculoserializer(ModelSerializer):
+class VeiculoSerializer(ModelSerializer):
     class Meta:
-        modal = Veiculo
+        model = Veiculo
         fields = '__all__'
+
 
